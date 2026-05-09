@@ -2,17 +2,17 @@
 
 namespace App\Services;
 
-use App\Models\EstabelecimentoModel;
+use App\Models\EmprestimoModel;
 
-class EstabelecimentoService {
+class EmprestimoService{
 
     protected $model;
 
     public function __construct(){
-        $this->model = new EstabelecimentoModel();
+        $this->model = new EmprestimoModel();
     }
 
-    public function listar(){
+    public function listar (){
         return $this->model->findAll();
     }
 

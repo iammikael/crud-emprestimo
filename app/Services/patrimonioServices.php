@@ -8,7 +8,7 @@ class PatrimonioService{
     protected $model;
 
     public function __construct(){
-        return $this->model = new PatrimonioModel;
+        $this->model = new PatrimonioModel();
     }
 
     public function listar(){
@@ -19,8 +19,12 @@ class PatrimonioService{
         return $this->model->find($id);
     }
 
-    public function criar($id, array $dados){
-        return $this->model->insert($id,$dados);
+    public function criar(array $dados){
+        return $this->model->insert($dados);
+    }
+
+    public function atualizar($id, array $dados){
+        return $this->model->update($id,$dados);
     }
 
     public function excluir($id){
