@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Services\EstabelecimentoService;
+
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
 
@@ -9,8 +11,7 @@ class EstabelecimentoController extends BaseController
 {
     protected $service;
     
-    public function __construcut(){
-
+    public function __construct(){
         $this->service = new EstabelecimentoService();
     }
 

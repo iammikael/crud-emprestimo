@@ -9,7 +9,7 @@ class EmprestismoController extends BaseController
 {
     protected $service;
     
-    public function __construcut(){
+    public function __construct(){
 
         $this->service = new EstabelecimentoService();
     }

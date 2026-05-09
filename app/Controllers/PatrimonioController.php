@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Services\PatrimonioService;
+
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
 
@@ -9,7 +11,7 @@ class PatrimonioController extends BaseController
 {
     protected $service;
     
-    public function __construcut(){
+    public function __construct(){
 
         $this->service = new PatrimonioService();
     }
