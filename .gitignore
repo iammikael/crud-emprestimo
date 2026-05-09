@@ -1,3 +1,4 @@
 storage/database
-vendor/
-.env
+/vendor
+/.env
+/writable

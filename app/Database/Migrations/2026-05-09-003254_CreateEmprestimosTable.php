@@ -4,27 +4,28 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class CreateEmprestimoTable extends Migration
+class CreateEmprestimosTable extends Migration
 {
     public function up()
     {
         $this->forge->addField([
-            'num_emprest' => [ 
+            'id' =>[
                 'type'           => 'SERIAL',
                 'unsigned'       => true,
                 'auto_increment' => true,
             ],
-            'dados_estab_req' => [
-                'type'       => 'VARCHAR',
-                'constraint' => 255,
+            'num_emprest' => [ 
+                'type'           => 'INT',
+                'constraint'     => 7,
             ],
-            'dados_estab_atend' => [
-                'type'       => 'VARCHAR',
-                'constraint' => 255,
+            'dados_estab_req_id' => [
+                'type'       => 'INT',
             ],
-            'patrimonio' => [
-                'type'       => 'VARCHAR',
-                'constraint' => 255
+            'dados_estab_atend_id' => [
+                'type'       => 'INT',
+            ],
+            'patrimonio_id' => [
+                'type'       => 'INT',
             ],
             'data_emprest' => [
                 'type' => 'DATE',
@@ -34,11 +35,11 @@ class CreateEmprestimoTable extends Migration
             ],
         ]);
             $this->forge->addkey('num_emprest',true);
-            $this->forge->CreateTable('emprestimo');
+            $this->forge->CreateTable('emprestimos');
     }
 
     public function down()
     {
-            $this->forge->dropTable('emprestimo');
+            $this->forge->dropTable('emprestimos');
     }
 }
