@@ -1,0 +1,53 @@
+ERROR - 2026-05-09 00:00:17 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect()
+#1 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists()
+#6 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest()
+#8 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::{closure:CodeIgniter\Commands\Database\Migrate::run():88}()
+#9 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked()
+#10 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run()
+#11 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run()
+#12 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Boot.php(442): CodeIgniter\CLI\Console->run()
+#13 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Boot.php(166): CodeIgniter\Boot::runCommand()
+#14 C:\Users\Mikael\Documents\teste-genisis\spark(87): CodeIgniter\Boot::bootSpark()
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#3 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists()
+#5 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest()
+#7 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::{closure:CodeIgniter\Commands\Database\Migrate::run():88}()
+#8 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked()
+#9 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run()
+#10 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run()
+#11 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Boot.php(442): CodeIgniter\CLI\Console->run()
+#12 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Boot.php(166): CodeIgniter\Boot::runCommand()
+#13 C:\Users\Mikael\Documents\teste-genisis\spark(87): CodeIgniter\Boot::bootSpark()
+#14 {main}
+ERROR - 2026-05-09 00:02:51 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: ERROR:  invalid value for parameter "client_encoding": "utf8mb4" in C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:98
+Stack trace:
+#0 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(555): CodeIgniter\Database\Postgre\Connection->connect()
+#1 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query()
+#3 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists()
+#5 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest()
+#7 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::{closure:CodeIgniter\Commands\Database\Migrate::run():88}()
+#8 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked()
+#9 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run()
+#10 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run()
+#11 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Boot.php(442): CodeIgniter\CLI\Console->run()
+#12 C:\Users\Mikael\Documents\teste-genisis\vendor\codeigniter4\framework\system\Boot.php(166): CodeIgniter\Boot::runCommand()
+#13 C:\Users\Mikael\Documents\teste-genisis\spark(87): CodeIgniter\Boot::bootSpark()
+#14 {main}
