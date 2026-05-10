@@ -15,7 +15,7 @@ class EstabelecimentoModel extends Model
     protected $allowedFields    = 
     [
         'razao_social',
-        'nome_fantasia',
+        'senha',
         'cnpj',
         'ramo_atividade'
     ];

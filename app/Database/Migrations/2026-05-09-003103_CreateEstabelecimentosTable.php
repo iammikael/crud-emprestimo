@@ -18,8 +18,8 @@ class CreateEstabelecimentosTable extends Migration
                 'type'       => 'VARCHAR',
                 'constraint' => 255,
             ],
-            'nome_fantasia' =>[
-                'type'       => 'VARCHAR',
+            'senha' =>[
+                'type'       => 'PASSWORD',
                 'constraint' => 255,
             ],
             'cnpj' =>[

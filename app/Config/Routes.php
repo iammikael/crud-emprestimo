@@ -8,5 +8,5 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 
 $routes->get('/estabelecimentos', 'EstabelecimentoController::index');
-
 $routes->get('/patrimonios', 'PatrimonioController::index');
+$routes->get('/emprestimos', 'PatrimonioController::index');
