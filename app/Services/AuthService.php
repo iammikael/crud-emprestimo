@@ -28,6 +28,7 @@ class AuthService{
             'id' => $estabelecimento['id'],
             'cnpj' => $estabelecimento['cnpj'],
             'estabelecimento_id' => $estabelecimento['id'],
+            'razao_social' => $estabelecimento['razao_social'],
             'logado' => true
         ]);
 

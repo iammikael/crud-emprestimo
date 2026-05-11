@@ -14,7 +14,6 @@ class EmprestimoModel extends Model
     protected $protectFields    = true;
     protected $allowedFields    = 
     [
-        'num_emprest',
         'dados_estab_req_id',
         'dados_estab_atend_id',
         'patrimonio_id',
@@ -38,7 +37,6 @@ class EmprestimoModel extends Model
     // Validation
     protected $validationRules      = 
     [
-        'num_emprest'          => 'required',
         'dados_estab_req_id'   => 'required',
         'dados_estab_atend_id' => 'required',
         'patrimonio_id'        => 'required',

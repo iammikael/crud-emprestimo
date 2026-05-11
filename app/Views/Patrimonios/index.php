@@ -81,15 +81,17 @@
                             <?= esc($p['tipo_patrimonio']) ?>
                         </p>
 
-                        <div class="flex gap-3">
+                        <span class="inline-block bg-green-100 text-green-700 text-sm px-3 py-1 rounded-full mb-5">
+                            Propio
+                        </span>
 
+                        <div class="flex gap-3">
                             <button class="flex-1 bg-blue-600 hover:bg-blue-700 text-white transition rounded-xl py-2 font-medium">
                                 Editar
                             </button>
                             <button class="flex-1 bg-red-100 hover:bg-red-200 text-red-600 transition rounded-xl py-2 font-medium">
                                 Indisponivel
                             </button>
-
                         </div>
 
                     </div>

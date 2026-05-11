@@ -55,7 +55,6 @@
 
         </aside>
 
-        <!-- CONTEÚDO -->
         <main class="flex-1 p-10">
             <div class="flex items-center gap-4 mb-10">
                 <h1 class="text-4xl font-bold">
@@ -82,11 +81,15 @@
                         <p class="text-gray-500 mb-5">
                             <?= esc($p['razao_social']) ?>
                         </p>
-                    <div class="flex gap-3">
-                            <button class="flex-1 bg-green-600 hover:bg-green-900 text-white transition rounded-xl py-2 font-medium">
-                                Solicitar empréstimo
-                            </button>
-                    </div>
+
+                        <span class="inline-block bg-green-100 text-green-700 text-sm px-3 py-1 rounded-full mb-5">
+                            Disponível
+                        </span>
+
+                        <a href="emprestimos/solicitarEmprestimo/<?= $p['id'] ?>"
+                        class="flex-1 bg-green-600 hover:bg-green-900 text-white transition rounded-xl py-2 font-medium text-center block">
+                            Solicitar empréstimo
+                        </a>
                     </div>
 
                 <?php endforeach; ?>
