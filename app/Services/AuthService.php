@@ -27,6 +27,7 @@ class AuthService{
         session()->set([
             'id' => $estabelecimento['id'],
             'cnpj' => $estabelecimento['cnpj'],
+            'estabelecimento_id' => $estabelecimento['id'],
             'logado' => true
         ]);
 

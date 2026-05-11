@@ -33,8 +33,8 @@ class EstabelecimentoModel extends Model
 
     // Validation
     protected $validationRules      = [
-        'razao_social'=>'required|min_legth[5]|max_length[60]',
-        'cnpj'=>'required|min_lenght[14]',
+        'razao_social'=>'required',
+        'cnpj'=>'required',
         'ramo_atividade'=>'required'
         ];
     protected $validationMessages   = [];

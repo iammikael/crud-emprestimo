@@ -18,7 +18,8 @@ class PatrimonioModel extends Model
         'cod_patrimonio',
         'tipo_patrimonio',
         'data_entrada',
-        'estab_pai_id'
+        'estab_pai_id',
+        'status'
     ];
 
     protected bool $allowEmptyInserts = false;
@@ -37,7 +38,7 @@ class PatrimonioModel extends Model
     // Validation
     protected $validationRules      = 
     [
-        'nome_patrimonio' => 'required|min_length[5]',
+        'nome_patrimonio' => 'required',
         'cod_patrimonio'  => 'required',
         'tipo_patrimonio' => 'required',
         'data_entrada'    => 'required',

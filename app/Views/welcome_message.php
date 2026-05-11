@@ -23,7 +23,7 @@
                 </label>
 
                 <input
-                    type="varchar"
+                    type="text"
                     name="cnpj"
                     placeholder="Digite o seu CNPJ"
                     class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500"
@@ -51,9 +51,15 @@
 
             <div class="flex items-center justify-center ">
                 <p>Ainda não tem conta?</P>
-                <p class="font-bold"> Cadastre-se</p>
+                <a href="/cadastro" class="font-bold"> Cadastre-se</a>
             </div>
- 
+            
+            <?php if(session()->getFlashdata('erro')): ?>
+                <div class="mt-4 bg-red-100 text-red-700 p-3 rounded-lg text-center">
+                    <?= session()->getFlashdata('erro') ?>
+                </div>
+            <?php endif; ?>
+
         </form>
 
     </div>

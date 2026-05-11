@@ -12,7 +12,15 @@ class PatrimonioService{
     }
 
     public function listar(){
-        return $this->model->findAll();
+       return $this->model
+            ->select('patrimonios.*, estabelecimentos.razao_social')
+            ->join(
+                'estabelecimentos',
+                'estabelecimentos.id = patrimonios.estab_pai_id'
+    )
+
+        ->where('status', 'true')
+        ->findAll();
     }
 
     public function busca($id){

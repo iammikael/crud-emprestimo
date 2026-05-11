@@ -13,55 +13,42 @@
 
     <div class="bg-white w-full max-w-md p-8 rounded-2xl shadow-lg">
         <h1 class="text-3xl font-bold text-center mb-8">
-            Cadastro
+            Cadastro de patrimonio
         </h1>
 
-        <form action="/cadastro" method="post" class="space-y-5">
+        <form action="/cadastroPatrimonio" method="post" class="space-y-5">
             <div>
                 <label class="block mb-2 font-medium">
-                    Razao Social
+                    Patrimonio
                 </label>
-
                 <input
                     type="varchar"
-                    name="razao_social"
-                    placeholder="Digite o nome sua empresa"
+                    name="nome_patrimonio"
+                    placeholder="Ex: Mesa..."
                     class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500"
                 >
             </div>
 
             <div>
                 <label class="block mb-2 font-medium">
-                    CNPJ
+                    Codigo do patrimonio
                 </label>
                 <input
                     type="varchar"
-                    name="cnpj"
-                    placeholder="Digite seu cnpj"
+                    name="cod_patrimonio"
+                    placeholder="Ex: Numero de serial"
                     class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500"
                 >
             </div>
 
             <div>
                 <label class="block mb-2 font-medium">
-                    Senha
-                </label>
-                <input
-                    type="password"
-                    name="senha"
-                    placeholder="Digite sua senha"
-                    class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500"
-                >
-            </div>
-
-            <div>
-                <label class="block mb-2 font-medium">
-                    Ramo de atividade
+                    Categoria do patrimonio
                 </label>
                 <input
                     type="varchar"
-                    name="ramo_atividade"
-                    placeholder="Ex: Informatica.."
+                    name="tipo_patrimonio"
+                    placeholder="Ex: Informatica."
                     class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500"
                 >
             </div>

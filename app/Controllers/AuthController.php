@@ -15,7 +15,7 @@ class AuthController extends BaseController
     }
 
     public function index(){
-        return view('auth/logi');
+        return view('welcome_message');
     }
 
     public function login(){
@@ -32,7 +32,7 @@ class AuthController extends BaseController
         }
 
         return redirect()
-        ->to('/welcome_message')
+        ->to('/home')
         ->with('sucesso', 'Login realizado com sucesso');
     }
 }
