@@ -27,6 +27,7 @@ $routes->post('/cadastroPatrimonio', 'PatrimonioController::store');
 
 
 //Rotas de login e logout
+$routes->get('/login', 'AuthController::index');
 $routes->post('/login', 'AuthController::login');
 $routes->get('/logout', 'AuthController::logout');
 
